@@ -1,0 +1,151 @@
+<html> 
+<style>
+  #myTextBox1 { margin-left: 40px; }
+ </style> 
+<body> 
+    <h3>Cricket Win Prediction</h3> 
+
+<div> 
+  <form action="/result" method="POST"> 
+    <div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="audience">Audience Number</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<input type="text" id="myTextBox1" name="audience" value="1000" readonly style="background-color:#D3D3D3;font-weight:bold"> 
+			<label for="audience-label">(Mean Value applied - Not editable)</label> 
+		</div>
+	</div> 
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="playerzero">Number of players with 0 runs</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="playerzero"> 
+			  <option value="0">0</option> 
+			  <option value="1">1</option> 
+			  <option value="2">2</option> 
+			  <option value="3">3</option>  
+			  <option value="4">4</option>  
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="extraballs">Extra Balls Bowled</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<input type="text" id="myTextBox1" name="extraballs"> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="season">Season</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="season"> 
+			  <option value="1">Summer</option> 
+			  <option value="2">Winter</option> 
+			  <option value="3">Rainy</option>  
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="teamage">Average Team Age</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<input type="text" id="myTextBox1" name="teamage"> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="extraopponent">Extra balls bowled by opponent</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<input type="text" id="myTextBox1" name="extraopponent" value="0" readonly style="background-color:#D3D3D3;font-weight:bold"> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="opponent">Opponent</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="opponent"> 
+			  <option value="1">Srilanka</option> 
+			  <option value="2">Zimbabwe</option> 
+			  <option value="3">Kenya</option>  
+			  <option value="4">Australia</option>  
+			  <option value="5">England</option>  
+			  <option value="6">South Africa</option>  
+			  <option value="7">Pakistan</option>  
+			  <option value="8">West Indies</option>  
+			  <option value="9">Bangladesh</option>  
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="highrun">Highest runs by a player</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<input type="text" id="myTextBox1" name="highrun"> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="maxwicket">Maximum wickets taken per over</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="maxwicket"> 
+			  <option value="1">1</option> 
+			  <option value="2">2</option> 
+			  <option value="3">3</option>  
+			  <option value="4">4</option>  
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="minrun">Minimum runs given per over</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="minrun"> 
+			  <option value="0">0</option> 
+			  <option value="1">1</option> 
+			  <option value="2">2</option> 
+			  <option value="3">3</option>  
+			  <option value="4">4</option>  
+			  <option value="5">5</option> 
+			  <option value="6">6</option> 
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<div style="float:left; width:15%;">
+			<label for="allrounder">Number of all-rounders in the team</label> 
+		</div>
+		<div style="float:left; width:85%;">
+			<select id="myTextBox1" name="allrounder"> 
+			  <option value="1">1</option> 
+			  <option value="2">2</option> 
+			  <option value="3">3</option>  
+			  <option value="4">4</option> 
+			</select> 
+		</div>
+	</div>
+	<div class="rows">
+		<input type="submit" value="Submit" style="background-color:black; color:white;"> 
+	</div>
+  </form> 
+</div> 
+<div class="rows">
+	<div style="float:left; width:15%;">
+		<label for="prediction">Prediction</label> 
+	</div>
+	<div style="float:left; width:85%;">
+		<output type="text" id="myTextBox1" name="prediction"> 
+	</div>
+</div>
+</body> 
+</html> 
