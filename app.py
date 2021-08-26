@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request,render_template
 import pickle
+import os
 
 app= Flask(__name__)
 
@@ -30,5 +31,6 @@ def result():
             prediction ='Lose'
         return render_template("result.html", prediction = prediction)
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True,port=port)
     app.config['TEMPLATES_AUTO_RELOAD'] = True
